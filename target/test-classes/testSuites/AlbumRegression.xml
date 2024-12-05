@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="SpotifyAPI : Album">
+	<listeners>
+		<listener class-name="listeners.RetryListener"></listener>
+	</listeners>
+	<test name="Regression">
+		<classes>
+			<class name="webAPI.TestAlbum"></class>
+		</classes>
+	</test>
+</suite>
