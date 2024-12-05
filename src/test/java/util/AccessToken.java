@@ -20,8 +20,8 @@ public class AccessToken {
 	public static void getAccessToken() {
 		Map<String, String> requestBody = new HashMap<String, String>();
 		requestBody.put("grant_type", "client_credentials");
-		requestBody.put("client_id", "57285dd5a93a416b9a4fbd2210100a2d");
-		requestBody.put("client_secret", "db328a1b29214aef8bf23fe58a374869");
+		requestBody.put("client_id", PropertyReader.getProperty("clientID"));
+		requestBody.put("client_secret", PropertyReader.getProperty("clientSecret"));
 		
 		Response response = given().spec(UserRequestSpecification.getInstance().getAccessTokenSpecification())
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();		
@@ -44,8 +44,8 @@ public class AccessToken {
 		requestBody.put("grant_type", "authorization_code");
 		requestBody.put("code", code);
 		requestBody.put("redirect_uri", "http://localhost:8010/");
-		requestBody.put("client_id", "57285dd5a93a416b9a4fbd2210100a2d");
-		requestBody.put("client_secret", "db328a1b29214aef8bf23fe58a374869");
+		requestBody.put("client_id", PropertyReader.getProperty("clientID"));
+		requestBody.put("client_secret", PropertyReader.getProperty("clientSecret"));
 		
 		Response response = given().spec(UserRequestSpecification.getInstance().getAccessTokenSpecification())
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
@@ -67,8 +67,8 @@ public class AccessToken {
 		
 		requestBody.put("grant_type", "refresh_token");
 		requestBody.put("refresh_token", PropertyReader.getProperty("userLibReadRefreshToken"));
-		requestBody.put("client_id", "57285dd5a93a416b9a4fbd2210100a2d");
-		requestBody.put("client_secret", "db328a1b29214aef8bf23fe58a374869");
+		requestBody.put("client_id", PropertyReader.getProperty("clientID"));
+		requestBody.put("client_secret", PropertyReader.getProperty("clientSecret"));
 				
 		Response response = given().spec(UserRequestSpecification.getInstance().getAccessTokenSpecification())
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
@@ -98,8 +98,8 @@ public class AccessToken {
 		requestBody.put("grant_type", "authorization_code");
 		requestBody.put("code", code);
 		requestBody.put("redirect_uri", "http://localhost:8010/");
-		requestBody.put("client_id", "57285dd5a93a416b9a4fbd2210100a2d");
-		requestBody.put("client_secret", "db328a1b29214aef8bf23fe58a374869");
+		requestBody.put("client_id", PropertyReader.getProperty("clientID"));
+		requestBody.put("client_secret", PropertyReader.getProperty("clientSecret"));
 		
 		Response response = given().spec(UserRequestSpecification.getInstance().getAccessTokenSpecification())
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
@@ -121,8 +121,8 @@ public class AccessToken {
 		
 		requestBody.put("grant_type", "refresh_token");
 		requestBody.put("refresh_token", PropertyReader.getProperty("userLibModifyRefreshToken"));
-		requestBody.put("client_id", "57285dd5a93a416b9a4fbd2210100a2d");
-		requestBody.put("client_secret", "db328a1b29214aef8bf23fe58a374869");
+		requestBody.put("client_id", PropertyReader.getProperty("clientID"));
+		requestBody.put("client_secret", PropertyReader.getProperty("clientSecret"));
 				
 		Response response = given().spec(UserRequestSpecification.getInstance().getAccessTokenSpecification())
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
