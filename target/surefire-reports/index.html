@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-SpotifyAPI___Album" class="navigator-link">
-              <span class="suite-name border-passed">SpotifyAPI : Album</span>
+              <span class="suite-name border-failed">SpotifyAPI : Album</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,40 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,  2 skipped,  7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SpotifyAPI___Album" class="hide-methods failed suite-SpotifyAPI___Album"> (hide)</a> <!-- hide-methods failed suite-SpotifyAPI___Album -->
+                      <a href="#" panel-name="suite-SpotifyAPI___Album" class="show-methods failed suite-SpotifyAPI___Album"> (show)</a> <!-- show-methods failed suite-SpotifyAPI___Album -->
+                    </span>
+                    <div class="method-list-content failed suite-SpotifyAPI___Album">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-SpotifyAPI___Album" title="webAPI.TestAlbum" class="method navigator-link" hash-for-method="getAlbum">getAlbum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SpotifyAPI___Album -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-SpotifyAPI___Album" class="hide-methods skipped suite-SpotifyAPI___Album"> (hide)</a> <!-- hide-methods skipped suite-SpotifyAPI___Album -->
+                      <a href="#" panel-name="suite-SpotifyAPI___Album" class="show-methods skipped suite-SpotifyAPI___Album"> (show)</a> <!-- show-methods skipped suite-SpotifyAPI___Album -->
+                    </span>
+                    <div class="method-list-content skipped suite-SpotifyAPI___Album">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SpotifyAPI___Album" title="webAPI.TestAlbum" class="method navigator-link" hash-for-method="getAlbum">getAlbum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-SpotifyAPI___Album" title="webAPI.TestAlbum" class="method navigator-link" hash-for-method="getAlbum">getAlbum</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-SpotifyAPI___Album -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,11 +134,6 @@
                       <a href="#" panel-name="suite-SpotifyAPI___Album" class="show-methods passed suite-SpotifyAPI___Album"> (show)</a> <!-- show-methods passed suite-SpotifyAPI___Album -->
                     </span>
                     <div class="method-list-content passed suite-SpotifyAPI___Album">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-SpotifyAPI___Album" title="webAPI.TestAlbum" class="method navigator-link" hash-for-method="getAlbum">getAlbum</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-SpotifyAPI___Album" title="webAPI.TestAlbum" class="method navigator-link" hash-for-method="getAlbumTracks">getAlbumTracks</a> <!-- method navigator-link -->
@@ -153,9 +181,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SpotifyAPI___Album" class="panel SpotifyAPI___Album">
-          <div class="suite-SpotifyAPI___Album-class-passed">
+          <div class="suite-SpotifyAPI___Album-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">webAPI.TestAlbum</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,10 +192,71 @@
                   <a name="getAlbum">
                   </a> <!-- getAlbum -->
                   <span class="method-name">getAlbum</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Get Album)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SpotifyAPI___Album-class-failed -->
+          <div class="suite-SpotifyAPI___Album-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">webAPI.TestAlbum</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlbum">
+                  </a> <!-- getAlbum -->
+                  <span class="method-name">getAlbum</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Get Album)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getAlbum">
+                  </a> <!-- getAlbum -->
+                  <span class="method-name">getAlbum</span>
+                  <div class="stack-trace">java.lang.AssertionError: 
+Expected: is &lt;400&gt;
+     but: was &lt;200&gt;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
+	at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Get Album)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SpotifyAPI___Album-class-skipped -->
+          <div class="suite-SpotifyAPI___Album-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webAPI.TestAlbum</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="getAlbumTracks">
@@ -288,44 +377,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getArtist')
 data.setCell(0, 2, 'webAPI.TestAlbum')
-data.setCell(0, 3, 2456);
+data.setCell(0, 3, 3067);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'saveAlbumForUser')
 data.setCell(1, 2, 'webAPI.TestAlbum')
-data.setCell(1, 3, 1460);
+data.setCell(1, 3, 1842);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'removeAlbumForUser')
 data.setCell(2, 2, 'webAPI.TestAlbum')
-data.setCell(2, 3, 589);
+data.setCell(2, 3, 654);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'getNewRelease')
 data.setCell(3, 2, 'webAPI.TestAlbum')
-data.setCell(3, 3, 420);
+data.setCell(3, 3, 531);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'getUserSavedAlbums')
 data.setCell(4, 2, 'webAPI.TestAlbum')
-data.setCell(4, 3, 384);
+data.setCell(4, 3, 418);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'getSeveralAlbums')
+data.setCell(5, 1, 'getAlbum')
 data.setCell(5, 2, 'webAPI.TestAlbum')
-data.setCell(5, 3, 283);
+data.setCell(5, 3, 291);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'getAlbum')
+data.setCell(6, 1, 'getSeveralAlbums')
 data.setCell(6, 2, 'webAPI.TestAlbum')
-data.setCell(6, 3, 255);
+data.setCell(6, 3, 267);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'getAlbumTracks')
+data.setCell(7, 1, 'getAlbum')
 data.setCell(7, 2, 'webAPI.TestAlbum')
-data.setCell(7, 3, 252);
+data.setCell(7, 3, 260);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'getAlbum')
+data.setCell(8, 2, 'webAPI.TestAlbum')
+data.setCell(8, 3, 240);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'getAlbumTracks')
+data.setCell(9, 2, 'webAPI.TestAlbum')
+data.setCell(9, 3, 229);
 window.suiteTableData['SpotifyAPI___Album']= { tableData: data, tableDiv: 'times-div-SpotifyAPI___Album'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-SpotifyAPI___Album">
               </div> <!-- times-div-SpotifyAPI___Album -->
             </div> <!-- times-div -->
@@ -358,107 +455,133 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
-                <span class="method-start">391 ms</span>
+                <span class="method-start">616 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getArtist())</span>
-                <span class="method-start">407 ms</span>
+                <span class="method-start">645 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getArtist</span>
-                <span class="method-start">407 ms</span>
+                <span class="method-start">655 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getArtist status=SUCCESS method=TestAlbum.getArtist()[pri:1, instance:webAPI.TestAl...)</span>
-                <span class="method-start">2867 ms</span>
+                <span class="method-start">3725 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getAlbum())</span>
-                <span class="method-start">2877 ms</span>
+                <span class="method-start">3737 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getAlbum</span>
-                <span class="method-start">2878 ms</span>
+                <span class="method-start">3738 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">getResult([TestResult name=getAlbum status=SUCCESS method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbu...)</span>
-                <span class="method-start">3135 ms</span>
+                <span class="method-name">getResult([TestResult name=getAlbum status=SKIP method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@2...)</span>
+                <span class="method-start">4031 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getAlbum())</span>
+                <span class="method-start">4034 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">getAlbum</span>
+                <span class="method-start">4035 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=getAlbum status=SKIP method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@2...)</span>
+                <span class="method-start">4296 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getAlbum())</span>
+                <span class="method-start">4298 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">getAlbum</span>
+                <span class="method-start">4299 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=getAlbum status=FAILURE method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbu...)</span>
+                <span class="method-start">4547 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getSeveralAlbums())</span>
-                <span class="method-start">3137 ms</span>
+                <span class="method-start">4549 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getSeveralAlbums</span>
-                <span class="method-start">3139 ms</span>
+                <span class="method-start">4551 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getSeveralAlbums status=SUCCESS method=TestAlbum.getSeveralAlbums()[pri:3, instance...)</span>
-                <span class="method-start">3423 ms</span>
+                <span class="method-start">4820 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getAlbumTracks())</span>
-                <span class="method-start">3425 ms</span>
+                <span class="method-start">4824 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getAlbumTracks</span>
-                <span class="method-start">3427 ms</span>
+                <span class="method-start">4826 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getAlbumTracks status=SUCCESS method=TestAlbum.getAlbumTracks()[pri:4, instance:web...)</span>
-                <span class="method-start">3681 ms</span>
+                <span class="method-start">5056 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getUserSavedAlbums())</span>
-                <span class="method-start">3682 ms</span>
+                <span class="method-start">5059 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getUserSavedAlbums</span>
-                <span class="method-start">3683 ms</span>
+                <span class="method-start">5060 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getUserSavedAlbums status=SUCCESS method=TestAlbum.getUserSavedAlbums()[pri:5, inst...)</span>
-                <span class="method-start">4068 ms</span>
+                <span class="method-start">5479 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.saveAlbumForUser())</span>
-                <span class="method-start">4070 ms</span>
+                <span class="method-start">5481 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">saveAlbumForUser</span>
-                <span class="method-start">4071 ms</span>
+                <span class="method-start">5483 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=saveAlbumForUser status=SUCCESS method=TestAlbum.saveAlbumForUser()[pri:6, instance...)</span>
-                <span class="method-start">5532 ms</span>
+                <span class="method-start">7326 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.removeAlbumForUser())</span>
-                <span class="method-start">5534 ms</span>
+                <span class="method-start">7328 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">removeAlbumForUser</span>
-                <span class="method-start">5535 ms</span>
+                <span class="method-start">7329 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=removeAlbumForUser status=SUCCESS method=TestAlbum.removeAlbumForUser()[pri:7, inst...)</span>
-                <span class="method-start">6125 ms</span>
+                <span class="method-start">7984 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">logBeforeMethod(public void webAPI.TestAlbum.getNewRelease())</span>
-                <span class="method-start">6127 ms</span>
+                <span class="method-start">7986 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">getNewRelease</span>
-                <span class="method-start">6128 ms</span>
+                <span class="method-start">7986 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">getResult([TestResult name=getNewRelease status=SUCCESS method=TestAlbum.getNewRelease()[pri:8, instance:webAP...)</span>
-                <span class="method-start">6548 ms</span>
+                <span class="method-start">8518 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">6585 ms</span>
+                <span class="method-start">8555 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
