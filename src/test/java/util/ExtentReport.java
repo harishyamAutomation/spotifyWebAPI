@@ -1,5 +1,8 @@
 package util;
 
+import java.awt.DisplayMode;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
 import java.io.File;
 import java.io.IOException;
 
@@ -41,10 +44,18 @@ public class ExtentReport {
 			e.printStackTrace();
 		}
 		
+		GraphicsDevice gd = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
+		
+        // Get the resolution (width and height) of the primary screen
+        DisplayMode mode = gd.getDisplayMode();
+        int screenWidth = mode.getWidth();
+        int screenHeight = mode.getHeight();
+		
 		extentReport.setSystemInfo("Product", "Spotify WebAPI");
 		extentReport.setSystemInfo("Host", "Harishyam Sharma");
 		extentReport.setSystemInfo("Environment", "QA");
-		extentReport.setSystemInfo("OS", "Windows 11 Intel core i3 12th Gen");
+		extentReport.setSystemInfo("OS", System.getProperty("os.name")+", "+screenWidth+"x"+screenHeight);
+		extentReport.setSystemInfo("Java Version", System.getProperty("java.version"));
 		
 		OutputLog.info("Initialization Successfull");
 		

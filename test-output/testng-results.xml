@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="10" passed="7" failed="1" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-06T04:25:41 IST" name="SpotifyAPI : Album" finished-at="2024-12-06T04:25:48 IST" duration-ms="7429">
+  <suite started-at="2024-12-07T06:04:12 IST" name="Default suite" finished-at="2024-12-07T06:04:17 IST" duration-ms="5121">
     <groups>
     </groups>
-    <test started-at="2024-12-06T04:25:41 IST" name="Regression" finished-at="2024-12-06T04:25:48 IST" duration-ms="7429">
+    <test started-at="2024-12-07T06:04:12 IST" name="Default test" finished-at="2024-12-07T06:04:17 IST" duration-ms="5121">
       <class name="webAPI.TestAlbum">
-        <test-method is-config="true" signature="config(java.lang.String,java.lang.String)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:40 IST" name="config" finished-at="2024-12-06T04:25:41 IST" duration-ms="607" status="PASS">
+        <test-method is-config="true" signature="config(java.lang.String,java.lang.String)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:11 IST" name="config" finished-at="2024-12-07T06:04:12 IST" duration-ms="1074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:41 IST" name="setup" finished-at="2024-12-06T04:25:41 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:12 IST" name="setup" finished-at="2024-12-07T06:04:12 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:41 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:41 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:12 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:12 IST" duration-ms="11" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,22 +38,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="getArtist()[pri:1, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:41 IST" name="getArtist" description="Get Artists Data" finished-at="2024-12-06T04:25:45 IST" duration-ms="3943" status="PASS">
+        <test-method signature="getArtist()[pri:1, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:12 IST" name="getArtist" description="Get Artists Data" finished-at="2024-12-07T06:04:15 IST" duration-ms="2803" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getArtist -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getResult" finished-at="2024-12-06T04:25:45 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="getResult" finished-at="2024-12-07T06:04:15 IST" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getArtist status=SUCCESS method=TestAlbum.getArtist()[pri:1, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getArtist status=SUCCESS method=TestAlbum.getArtist()[pri:1, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -64,206 +64,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method retried="true" signature="getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getAlbum" description="Get Album" finished-at="2024-12-06T04:25:45 IST" duration-ms="317" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: is <400>
-     but: was <200>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: is <400>
-     but: was <200>
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="getAlbum()[pri:2, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="getAlbum" description="Get Album" finished-at="2024-12-07T06:04:15 IST" duration-ms="261" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAlbum -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getResult" finished-at="2024-12-06T04:25:45 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="getResult" finished-at="2024-12-07T06:04:15 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getAlbum status=SKIP method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getAlbum status=SUCCESS method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void webAPI.TestAlbum.getAlbum()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logBeforeMethod -->
-        <test-method retried="true" signature="getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getAlbum" description="Get Album" finished-at="2024-12-06T04:25:45 IST" duration-ms="226" status="SKIP">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: is <400>
-     but: was <200>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: is <400>
-     but: was <200>
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAlbum -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getResult" finished-at="2024-12-06T04:25:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getAlbum status=SKIP method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:45 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void webAPI.TestAlbum.getAlbum()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- logBeforeMethod -->
-        <test-method signature="getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:45 IST" name="getAlbum" description="Get Album" finished-at="2024-12-06T04:25:46 IST" duration-ms="232" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[
-Expected: is <400>
-     but: was <200>]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: 
-Expected: is <400>
-     but: was <200>
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:6)
-at webAPI.TestAlbum.getAlbum(TestAlbum.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getAlbum -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getResult" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=getAlbum status=FAILURE method=TestAlbum.getAlbum()[pri:2, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:15 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -274,22 +90,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="getSeveralAlbums()[pri:3, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getSeveralAlbums" description="Get Several Albums" finished-at="2024-12-06T04:25:46 IST" duration-ms="227" status="PASS">
+        <test-method signature="getSeveralAlbums()[pri:3, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:15 IST" name="getSeveralAlbums" description="Get Several Albums" finished-at="2024-12-07T06:04:16 IST" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSeveralAlbums -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getResult" finished-at="2024-12-06T04:25:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getResult" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getSeveralAlbums status=SUCCESS method=TestAlbum.getSeveralAlbums()[pri:3, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getSeveralAlbums status=SUCCESS method=TestAlbum.getSeveralAlbums()[pri:3, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:16 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -300,22 +116,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="getAlbumTracks()[pri:4, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getAlbumTracks" description="Get Album Tracks" finished-at="2024-12-06T04:25:46 IST" duration-ms="243" status="PASS">
+        <test-method signature="getAlbumTracks()[pri:4, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getAlbumTracks" description="Get Album Tracks" finished-at="2024-12-07T06:04:16 IST" duration-ms="242" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getAlbumTracks -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getResult" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getResult" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getAlbumTracks status=SUCCESS method=TestAlbum.getAlbumTracks()[pri:4, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getAlbumTracks status=SUCCESS method=TestAlbum.getAlbumTracks()[pri:4, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -326,22 +142,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="getUserSavedAlbums()[pri:5, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getUserSavedAlbums" description="Get User&#039;s Saved Albums" finished-at="2024-12-06T04:25:46 IST" duration-ms="406" status="PASS">
+        <test-method signature="getUserSavedAlbums()[pri:5, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getUserSavedAlbums" description="Get User&#039;s Saved Albums" finished-at="2024-12-07T06:04:16 IST" duration-ms="377" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getUserSavedAlbums -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="getResult" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getResult" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getUserSavedAlbums status=SUCCESS method=TestAlbum.getUserSavedAlbums()[pri:5, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getUserSavedAlbums status=SUCCESS method=TestAlbum.getUserSavedAlbums()[pri:5, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:46 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -352,22 +168,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="saveAlbumForUser()[pri:6, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:46 IST" name="saveAlbumForUser" description="Save Album for current user" finished-at="2024-12-06T04:25:47 IST" duration-ms="618" status="PASS">
+        <test-method signature="saveAlbumForUser()[pri:6, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="saveAlbumForUser" description="Save Album for current user" finished-at="2024-12-07T06:04:16 IST" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- saveAlbumForUser -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:47 IST" name="getResult" finished-at="2024-12-06T04:25:47 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="getResult" finished-at="2024-12-07T06:04:16 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=saveAlbumForUser status=SUCCESS method=TestAlbum.saveAlbumForUser()[pri:6, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=saveAlbumForUser status=SUCCESS method=TestAlbum.saveAlbumForUser()[pri:6, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:47 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:47 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:16 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -378,26 +194,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method signature="removeAlbumForUser()[pri:7, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:47 IST" name="removeAlbumForUser" description="Remove User&#039;s Saved Album" finished-at="2024-12-06T04:25:48 IST" duration-ms="603" status="PASS">
+        <test-method signature="removeAlbumForUser()[pri:7, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:16 IST" name="removeAlbumForUser" description="Remove User&#039;s Saved Album" finished-at="2024-12-07T06:04:17 IST" duration-ms="195" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- removeAlbumForUser -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:48 IST" name="getResult" finished-at="2024-12-06T04:25:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:17 IST" name="getResult" finished-at="2024-12-07T06:04:17 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=removeAlbumForUser status=SUCCESS method=TestAlbum.removeAlbumForUser()[pri:7, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=removeAlbumForUser status=SUCCESS method=TestAlbum.removeAlbumForUser()[pri:7, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="getNewRelease()[pri:8, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:48 IST" name="getNewRelease" description="Get New Releases" finished-at="2024-12-06T04:25:48 IST" duration-ms="481" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getNewRelease -->
-        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:48 IST" name="logBeforeMethod" finished-at="2024-12-06T04:25:48 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="logBeforeMethod(java.lang.reflect.Method)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:17 IST" name="logBeforeMethod" finished-at="2024-12-07T06:04:17 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -408,22 +220,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logBeforeMethod -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:48 IST" name="getResult" finished-at="2024-12-06T04:25:48 IST" duration-ms="1" status="PASS">
+        <test-method signature="getNewRelease()[pri:8, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:17 IST" name="getNewRelease" description="Get New Releases" finished-at="2024-12-07T06:04:17 IST" duration-ms="547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getNewRelease -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:17 IST" name="getResult" finished-at="2024-12-07T06:04:17 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=getNewRelease status=SUCCESS method=TestAlbum.getNewRelease()[pri:8, instance:webAPI.TestAlbum@3aa078fd] output={null}]]]>
+                <![CDATA[[TestResult name=getNewRelease status=SUCCESS method=TestAlbum.getNewRelease()[pri:8, instance:webAPI.TestAlbum@51891008] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:webAPI.TestAlbum@3aa078fd]" started-at="2024-12-06T04:25:48 IST" name="endReport" finished-at="2024-12-06T04:25:49 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:webAPI.TestAlbum@51891008]" started-at="2024-12-07T06:04:17 IST" name="endReport" finished-at="2024-12-07T06:04:18 IST" duration-ms="400" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- webAPI.TestAlbum -->
-    </test> <!-- Regression -->
-  </suite> <!-- SpotifyAPI : Album -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

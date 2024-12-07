@@ -5,7 +5,12 @@
     <classes>
       <class name="webAPI.TestAlbum">
         <methods>
-          <include name="getArtist"/>
+          <include name="setup"/>
+          <include name="logBeforeMethod"/>
+          <include name="config"/>
+          <include name="endReport"/>
+          <include name="getSeveralAlbums"/>
+          <include name="getResult"/>
         </methods>
       </class> <!-- webAPI.TestAlbum -->
     </classes>

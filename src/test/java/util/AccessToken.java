@@ -52,8 +52,8 @@ public class AccessToken {
 		
 		assertThat(response.getStatusCode(), is(200));
 		
-		System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
-		System.out.println(">>>> Refresh Token : "+JSONReader.getData(response, "refresh_token"));
+//		System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
+//		System.out.println(">>>> Refresh Token : "+JSONReader.getData(response, "refresh_token"));
 		
 		System.out.println(">>>> ResponseBody : "+response.body().asString());
 		
@@ -74,17 +74,10 @@ public class AccessToken {
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
 		
 		assertThat(response.getStatusCode(), is(200));
-		
-		//System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
-		
+				
 		System.out.println(">>>> ResponseBody : "+response.body().asString());
-		
-		//System.out.println("Existing Refresh Token : "+PropertyReader.getProperty("userLibReadToken"));
-		
+				
 		PropertyReader.setProperty("userLibReadToken", JSONReader.getData(response, "access_token"));	
-		
-		//System.out.println("Updated Refresh Token : "+PropertyReader.getProperty("userLibReadToken"));
-
 		
 	}
 	
@@ -106,8 +99,8 @@ public class AccessToken {
 		
 		assertThat(response.getStatusCode(), is(200));
 		
-		System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
-		System.out.println(">>>> Refresh Token : "+JSONReader.getData(response, "refresh_token"));
+//		System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
+//		System.out.println(">>>> Refresh Token : "+JSONReader.getData(response, "refresh_token"));
 		
 		System.out.println(">>>> ResponseBody : "+response.body().asString());
 		
@@ -128,17 +121,10 @@ public class AccessToken {
 				.contentType(ContentType.URLENC).formParams(requestBody).when().post();
 		
 		assertThat(response.getStatusCode(), is(200));
-		
-		//System.out.println(">>>> Access Token : "+JSONReader.getData(response, "access_token"));
-		
+				
 		System.out.println(">>>> ResponseBody : "+response.body().asString());
-		
-		//System.out.println("Existing Refresh Token : "+PropertyReader.getProperty("userLibReadToken"));
-		
+				
 		PropertyReader.setProperty("userLibModifyToken", JSONReader.getData(response, "access_token"));	
-		
-		//System.out.println("Updated Refresh Token : "+PropertyReader.getProperty("userLibReadToken"));
-
 		
 	}
 }
