@@ -14,7 +14,6 @@ import core.OutputLog;
 import core.PropertyReader;
 import core.StatusCode;
 import io.restassured.response.Response;
-import util.AccessToken;
 import util.JSONReader;
 import util.UserRequestSpecification;
 

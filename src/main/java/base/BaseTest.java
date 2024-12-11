@@ -9,6 +9,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Optional;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
@@ -44,12 +45,15 @@ public class BaseTest {
 	
 	@BeforeMethod(alwaysRun = true)
 	public void logBeforeMethod(Method method) {
-		ExtentReport.startTest(method.getName(), "Description for method "+method.getName());
+		Test annotation = method.getAnnotation(Test.class);
+		String desc = annotation.description()==null?"":annotation.description();
+		ExtentReport.startTest(method.getName(), "<b>Description</b> : "+desc+"<hr style='margin:0.1%;'/> ");
 		OutputLog.info(">>> "+method.getName()+"execution has been started.");
 	}
 	
 	@AfterMethod(alwaysRun = true)
 	public void getResult(ITestResult result) {
+		
 		if(result.getStatus()==ITestResult.SUCCESS) {
 			ExtentReport.getTest().generateLog(Status.PASS, result.getName()+" : "+result.getMethod().getDescription()+" has been <b style='color:green'>PASSED</b>");
 		}else if(result.getStatus()==ITestResult.FAILURE) {

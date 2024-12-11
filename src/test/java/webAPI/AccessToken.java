@@ -1,9 +1,7 @@
-package util;
-
+package webAPI;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
-import static org.testng.Assert.assertEquals;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -13,6 +11,8 @@ import org.testng.annotations.Test;
 import core.PropertyReader;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import util.JSONReader;
+import util.UserRequestSpecification;
 
 public class AccessToken {
 
